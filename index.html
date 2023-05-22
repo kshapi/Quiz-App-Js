@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="iphone.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/06aa983bed.js" crossorigin="anonymous"></script>
+  <body>
+    <div class="iphone">
+      <div class="top"></div>
+      <div class="screen">
+       <!-- Start Section -->
+        <section id="start">
+          <h1>Quiz!</h1>
+          <button id="start-btn" class="btn">Srart Quiz</button>
+        </section>
+      <!-- Quiz Section -->
+        <section id="quiz">
+          <div id="timer">
+            <span>10s</span>
+          </div>
+          <h3 id="question"></h3>
+          
+          <div id="options">
+            <div class="row">
+              <input type="radio" id="A" name="option">
+              <label for="A"></label>
+            </div>
+          
+            <div class="row">
+              <input type="radio" id="B" name="option">
+              <label for="B"></label>
+            </div>
+          
+            <div class="row">
+              <input type="radio" id="C" name="option">
+              <label for="C"></label>
+            </div>
+          
+            <div class="row">
+              <input type="radio" id="D" name="option">
+              <label for="D"></label>
+            </div>
+          </div>
+          
+          <div id="btn">
+            <span id="question-count">10/5</span>
+            <button id="next-btn" class="btn" disabled>Next</button>
+          </div>
+          
+        </section>
+       <!-- Result Section -->
+        <section id="end">
+          <div id="result">
+            <div id="right">
+              <h3>Right</h3>
+              <span>5</span>
+            </div>
+            <div id="skip">
+              <h3>Skip</h3>
+              <span>4</span>
+            </div>
+            <div id="wrong">
+              <h3>Wrong</h3>
+              <span>2</span>
+            </div>
+          </div>
+          <button id="restart-btn" class="btn">Restart</button>
+        </section>
+        
+      </div>
+      <div class="home-btn"></div>
+    </div>
+    <!--SCRIPT-->
+  <script src="script.js" type="module"></script>
+</body>
+</html>
